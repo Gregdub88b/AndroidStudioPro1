@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">CirrulumVitae</string>
+    <string name="iinfoBiotext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin gravida est quis
+        fermentum sollicitudin.\n\n Nullam fermentum ligula et pretium blandit. Sed mollis elementum dui.
+        Duis accumsan magna feugiat, lobortis erat sed, commodo ipsum. Nulla efficitur arcu magna,
+        eget condimentum lacus accumsan non. Sed pellentesque ultricies magna semper volutpat.
+        Phasellus vestibulum lacus enim, at sollicitudin lacus ullamcorper in.
+        Vestibulum lobortis a nunc eget efficitur. Aliquam varius risus erat, vitae blandit libero convallis ac.
+        Integer venenatis arcu vitae risus rutrum tempus. Sed ornare turpis vitae purus vehicula gravida.
+        Sed auctor nulla vel augue maximus ornare. Morbi vel urna fermentum
+        lorem elementum cursus non sit amet urna. In malesuada tincidunt quam, non lobortis ipsum rhoncus ac. </string>
+    <string name="textview">TextView</string>
+    <string name="button">Button</string>
+    <string name="todo">TODO</string>
+    <string name="showName">Grzegorz Bujnowski</string>
+    <string name="hobby_hint_text">Enter your hobby</string>
+    <string name="done">Done</string>
+    <string name="anotherTextView">TextView</string>
+</resources>

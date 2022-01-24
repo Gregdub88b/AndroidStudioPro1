@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="bio"
+            type="com.example.cirrulumvitae.data.Bio" />
+
+
+    </data>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F9A825"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:verticalScrollbarPosition="defaultPosition"
+        tools:context=".MainActivity">
+
+
+        <ImageView
+            android:id="@+id/image_view1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/todo"
+            app:srcCompat="@drawable/ic_launcher_foreground"
+            tools:ignore="ImageContrastCheck"
+            tools:layout_editor_absoluteX="144dp"
+            tools:layout_editor_absoluteY="28dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{bio.name}"
+            android:textColor="#5D4037"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/enterYourHobbies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/hobby_hint_text"
+
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            tools:ignore="TextContrastCheck"
+            android:autofillHints="" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/done"
+            android:textColor="#FBC02D"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/displayHobbies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{bio.hobbies}"
+
+            android:textSize="24sp"
+            android:visibility="gone" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="SpeakableTextPresentCheck">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/armata"
+                android:padding="15dp"
+                android:text="@string/iinfoBiotext"
+                android:textColor="#6A1B9A"
+                android:textSize="20sp" />
+        </ScrollView>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</layout>
